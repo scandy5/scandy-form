@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	<h1>form</h1>
+	<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+		<label>
+			Your name: 
+			<input type="text" name="surname" placeholder="name..." required>
+		</label> 
+		<hr>
+		<label>Number: <input type="number" name="number"></label> 
+
+		<hr>
+
+		<label>
+			Email: 
+			<input type="email" name="email"></label>
+			<hr>
+			<p>What do u like?</p>
+			<label>
+				Football
+				<input type="checkbox" name="football" value="football">
+			</label>
+			<label>
+				Volleyball
+				<input type="checkbox" name="volleyball" value="volleyball">
+			</label>
+			<label>
+				Golf
+				<input type="checkbox" name="golf" value="golf">
+			</label>
+
+			<hr>
+		<label>
+			Male
+			<input type="radio" value="male" name="male" checked>
+		</label>
+		<label>
+			Female
+			<input type="radio" value="female" name="female">
+		</label>
+		<hr>
+		<label>
+			Password: 
+			<input type="password">
+		</label> <hr>
+		<label>
+			Range: 
+			<input type="range" name="range">
+		</label> 
+		<hr>
+		<label>
+			Time:
+			<input type="time" name="time">
+		</label> 
+			<hr> 
+		<label>
+			Color:
+			<input type="color" name="color">
+		</label> 
+		<hr> 
+		<label>
+			Birthday date: 
+			<input type="date" name="bitrhday">
+		</label> 
+		<hr>
+		<label>
+			Comment:
+			<textarea name="comment" id="" cols="30" rows="10"></textarea>
+		</label>
+		<label>
+			<input type="submit">
+		</label>
+	</form>
+
+</body>
+</html>
