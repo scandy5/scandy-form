@@ -12,36 +12,37 @@
 			<input type="text" name="surname" placeholder="name..." required autocomplete="off">
 		</label> 
 		<hr>
-		<label>Number: <input type="number" name="number"></label> 
+		<label>Number (0 - 10): <input type="number" name="number" min="0" max="10"></label> 
 
 		<hr>
 
 		<label>
 			Email: 
-			<input type="email" name="email"></label>
+			<input type="email" name="email" minlength="3">
+		</label>
 			<hr>
 			<p>What do u like?</p>
 			<label>
 				Football
-				<input type="checkbox" name="football" value="football">
+				<input type="checkbox" name="sport" value="football">
 			</label>
 			<label>
 				Volleyball
-				<input type="checkbox" name="volleyball" value="volleyball">
+				<input type="checkbox" name="sport" value="volleyball">
 			</label>
 			<label>
 				Golf
-				<input type="checkbox" name="golf" value="golf">
+				<input type="checkbox" name="sport" value="golf">
 			</label>
 
 			<hr>
 		<label>
 			Male
-			<input type="radio" value="male" name="male" checked>
+			<input type="radio" value="male" name="answer" checked>
 		</label>
 		<label>
 			Female
-			<input type="radio" value="female" name="female">
+			<input type="radio" value="female" name="answer">
 		</label>
 		<hr>
 		<label>
@@ -70,7 +71,7 @@
 		<hr>
 		<label>
 			Comment:
-			<textarea name="comment" id="" cols="30" rows="10"></textarea>
+			<textarea name="comment" id="" cols="30" rows="10" maxlength="150"></textarea>
 		</label>
 		<label>
 			<input type="submit">
